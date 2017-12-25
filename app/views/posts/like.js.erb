@@ -1,1 +1,1 @@
-$('#<%=@post.id%>').html('<%= link_to "", unlike_post_path(@post), class:"glyphicon glyphicon-star",remote: :true, method: :put %>')
+$('#<%=@post.id%>').html('<%= link_to "", unlike_post_path(@post), class:"glyphicon glyphicon-minus-sign",remote: :true, method: :put %>')

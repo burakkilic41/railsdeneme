@@ -28,9 +28,9 @@
                           <%= link_to '', edit_post_path(@post),class:"glyphicon glyphicon-pencil" %>
                           <div id="<%=@post.id%>">
                           <%if Like.where(user:current_user, post:@post).count>0%>
-                             <%= link_to "", unlike_post_path(@post), class:"glyphicon glyphicon-star",remote: :true, method: :put %>
+                             <%= link_to "", unlike_post_path(@post), class:"glyphicon glyphicon-minus-sign",remote: :true, method: :put %>
                           <%else%>
-                             <%= link_to "", like_post_path(@post), class:"glyphicon glyphicon-star-empty",remote: :true, method: :put %>
+                             <%= link_to "", like_post_path(@post), class:"glyphicon glyphicon-plus-sign",remote: :true, method: :put %>
                           <%end%>
                           </div>
                         </div>
