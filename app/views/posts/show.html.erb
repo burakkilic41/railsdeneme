@@ -24,13 +24,13 @@
                           
                         <hr>
                         <div class="action">
-                          <%= link_to '', @post, :method => :delete, data: {confirm: 'Eminmisin?',commit: 'Evet'},class:"glyphicon glyphicon-trash" %>
+                          <%= link_to '', @post, :method => :delete, data: {confirm: 'Eminmisin?',commit: 'Evet'},class:"glyphicon glyphicon-remove" %>
                           <%= link_to '', edit_post_path(@post),class:"glyphicon glyphicon-pencil" %>
                           <div id="<%=@post.id%>">
                           <%if Like.where(user:current_user, post:@post).count>0%>
-                             <%= link_to "", unlike_post_path(@post), class:"glyphicon glyphicon-heart",remote: :true, method: :put %>
+                             <%= link_to "", unlike_post_path(@post), class:"glyphicon glyphicon-star",remote: :true, method: :put %>
                           <%else%>
-                             <%= link_to "", like_post_path(@post), class:"glyphicon glyphicon-heart-empty",remote: :true, method: :put %>
+                             <%= link_to "", like_post_path(@post), class:"glyphicon glyphicon-star-empty",remote: :true, method: :put %>
                           <%end%>
                           </div>
                         </div>
