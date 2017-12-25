@@ -19,10 +19,10 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hello world App"
-  home: "Home Page"
-  signin: 'Sign in'
-  signup: 'Sign up'
-  exit: 'Exit'
-  settings: 'Settings'
+en: 
+    hello: 'Uygulamama hosgeldiniz!'
+    home: 'Ana Sayfa'
+    signin: 'Oturum Aç'
+    signup: 'Üye Ol'
+    exit: 'Çıkış'
+    settings: 'Ayarlar'
